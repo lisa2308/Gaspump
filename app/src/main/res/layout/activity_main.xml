@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/activity_search_settings_linear_search"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="horizontal"
-    android:gravity="center">
+    android:layout_height="match_parent">
+
     <EditText
         android:id="@+id/activity_search_settings_query"
         android:layout_width="match_parent"
@@ -13,10 +12,26 @@
         android:layout_marginRight="20dp"
         android:layout_marginTop="10dp"
         android:layout_marginBottom="8dp"
-        android:gravity="center"
-        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:layout_centerInParent="true"
         android:hint="Combien as tu dépensés aujourd'hui ?"
+        android:inputType="numberDecimal"
+        android:backgroundTint="@color/colorPrimary"/>
+
+    <EditText
+        android:id="@+id/activity_search_settings_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="8dp"
+        android:textAlignment="center"
+        android:layout_centerInParent="true"
+        android:layout_above="@id/activity_search_settings_query"
+        android:hint="Prix de l'essence aujourd'hui ?"
+        android:inputType="numberDecimal"
         android:backgroundTint="@color/colorPrimary"/>
 
 
-</LinearLayout>
+</RelativeLayout>
